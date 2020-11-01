@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Actividad 2 Bootstrap</title>
+</head>
+<style>
+    body {
+    padding: 10px;
+    margin: 0px;
+    border: none;
+    width: 100%;
+}
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="col-md-6 order-md-1" style="background-color:rgb(204, 194, 209)">
+
+
+            <form class="needs-validation" novalidate>
+                <div class="row g-3">
+                    <div class="col-sm-4 mb-3">
+                        <label for="nombre pila" class="form-label">
+                            Nombre de pila
+                        </label>
+                        <input id="nombrePila" type="text" class=" form-control" placeholder="Nombre" required>
+                        <div class="invalid-feedback">
+                            Nombre requerido
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 mb-3">
+                        <label for="apellido" class="form-label*">
+                            Apellido
+                        </label>
+                        <input id="apeLlido" type="text" class=" form-control" placeholder="Apellido" required>
+                        <div class="invalid-feedback">
+                            Apellido requerido
+                        </div>
+                    </div>
+
+                    <div class="col-sm-8 mb-3">
+                        <label for="username" class="form-label">
+                            Nombre de usuario
+                        </label>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                @
+                            </span>
+                            <input id="username" type="text" class=" form-control" placeholder="Nombre de usuario"
+                                required>
+                        </div>
+
+                        <div class="invalid-feedback">
+                            Apellido requerido
+                        </div>
+                    </div>
+
+                    <div class="col-sm-8 mb-3">
+                        <label for="email" class="form-label">
+                            Correo electrónico (opcional)
+                        </label>
+                        <div class="input-group">
+
+                            <input id="email" type="text" class=" form-control" placeholder="you@example.com" required>
+                        </div>
+
+                        <div class="invalid-feedback">
+                            email requerido
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-8 mb-3">
+                        <label for="ha" class="form-label">
+                            Dirección
+                        </label>
+                        <div class="input-group">
+
+                            <input id="ha" type="text" class=" form-control" placeholder="Calle 123 (ejemplo)" required>
+                        </div>
+
+                        <div class="invalid-feedback">
+                            Direccion requerido
+                        </div>
+                    </div>
+
+                    <div class="col-sm-8 mb-3">
+                        <label for="direccion" class="form-label">
+                            Dirección 2 (opcional)
+                        </label>
+                        <div class="input-group">
+
+                            <input id="Direccion" type="text" class=" form-control" placeholder="Apartamento o suite"
+                                required>
+                        </div>
+
+                        <div class="invalid-feedback">
+                            Direccion2 requerido
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-md-5 mb-3">
+                            <label for="country">Pais</label>
+                            <select class="custom-select d-block w-100" id="country" required>
+                                <option value="">Escoger...</option>
+                                <option>Argentina</option>
+                                <option>Uruguay</option>
+                                <option>Chile</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid country.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="state">Provincia</label>
+                            <select class="custom-select d-block w-100" id="state" required>
+                                <option value="">Escoger...</option>
+                                <option>Buenas Aires</option>
+                                <option>CABA</option>
+                                <option>AMBA</option>
+                                <option>Cordoba</option>
+                                <option>Misiones</option>
+                                <option>Jujuy</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please provide a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="zip">Código postal</label>
+                            <input type="text" class="form-control" id="zip" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Zip code required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="mb-2">
+
+                    <div class="col-md-12 mb-8">
+                        <div class="form-checkbox">
+                            <input id="sameAddress" type="checkbox" class="form-chek-input">
+                            <label class="form-check-label" for="sameAddress">
+                                La dirección de envío es la misma que mi dirección de facturción
+                            </label>
+                        </div>
+                        <div class="form-checkbox">
+                            <input id="Guardar" type="checkbox" class="form-chek-input">
+                            <label class="form-check-label" for="guarDar">
+                                Guardar esta informacón para la próxima vez
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mb-4">
+        </div>
+
+        </form>
+    </div>
+    
+</body>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.0.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.0.0/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+</html>
